@@ -12,12 +12,12 @@ Documents stay on your machine. Files are sent only to the AI provider's API (An
 ## Features
 
 - **PDF to text** — converts PDF files to plain text locally using [pdf-parse](https://github.com/modesty/pdf-parse) before sending anything to a model, reducing token usage and keeping raw documents off the wire where possible.
-- **Extract** — parses uploaded tax documents and pulls out structured data: income, deductions, credits, refund/owed, effective rate, filing status, dependents, and attached schedules.
-- **Check** — evaluates the return against a checklist of federal and state tax opportunities and flags anything that may have been missed or miscalculated.
-- **Chat** — ask follow-up questions about the return; the model has full context of the uploaded documents.
+- **Extract** — parses uploaded tax documents and pulls out structured data: income, deductions, credits, refund/owed, effective rate, filing status, dependents, and attached schedules. ([prompt](prompts/extract.md))
+- **Check** — evaluates the return against a checklist of federal and state tax opportunities and flags anything that may have been missed or miscalculated. ([prompt](prompts/checks.md) · [checks](tax-checks.md))
+- **Chat** — ask follow-up questions about the return; the model has full context of the uploaded documents. ([prompt](prompts/analyze.md))
 - **Sessions** — all sessions are saved locally. Each session stores uploaded files, extracted data, and check results for future reference.
 
-![Tax Checker screenshot](screenshot.png)
+<img src="screenshot.png" width="50%" />
 
 
 ## Setup
@@ -82,7 +82,7 @@ DRY_RUN=true npm run dev       # replay the saved sample — no API calls made
 
 ## Tax Checks
 
-Tax opportunity checks are defined in `tax-checks.md` at the project root. Each check has the form:
+Tax opportunity checks are defined in [`tax-checks.md`](tax-checks.md) at the project root. Each check has the form:
 
 ```
 IF <condition derived from extracted return data>
