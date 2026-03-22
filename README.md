@@ -2,24 +2,21 @@
 
 Built this app after spending a lot of time on LLMs trying to get my tax filed correctly. It takes IRS forms and supporting documents to extract key figures and surface potentially missed deductions, credits, and filing issues.
 
-**Note** This is an experimental software. It will get things wrong. The tax checks are neither exhaustive nor guaranteed to be accurate. In addition, LLMs make mistakes. Do not rely on any output from this app for filing decisions. Always consult a qualified tax professional before making any tax decisions.
-
----
+**Note:** This is an experimental software. It will get things wrong. The tax checks are neither exhaustive nor guaranteed to be accurate. In addition, LLMs make mistakes. Do not rely on any output from this app for filing decisions. Always consult a qualified tax professional before making any tax decisions.
 
 ## Security
 
 Documents stay on your machine. Files are sent only to the AI provider's API (Anthropic, Google, or OpenAI) when you run an analysis. API keys are entered at runtime and are never written to disk. Check the provider's data policy. Some of them say they don't use your data to train their models. If you're concerned, consider using anonymization tools. The app converts pdf files to text before sending it to LLMs. One improvement of the software could be to add anonymization step.
 
----
 
 ## Features
- 
-- **Extract** — parses uploaded tax documents (PDFs, images, spreadsheets, CSVs) and pulls out structured data: income, deductions, credits, refund/owed, effective rate, filing status, dependents, and attached schedules.
+
+- **PDF to text** — converts PDF files to plain text locally using [pdf-parse](https://github.com/modesty/pdf-parse) before sending anything to a model, reducing token usage and keeping raw documents off the wire where possible.
+- **Extract** — parses uploaded tax documents and pulls out structured data: income, deductions, credits, refund/owed, effective rate, filing status, dependents, and attached schedules.
 - **Check** — evaluates the return against a checklist of federal and state tax opportunities and flags anything that may have been missed or miscalculated.
 - **Chat** — ask follow-up questions about the return; the model has full context of the uploaded documents.
 - **Sessions** — all sessions are saved locally. Each session stores uploaded files, extracted data, and check results for future reference.
 
----
 
 ## Setup
 
@@ -34,16 +31,15 @@ npm run dev
 
 The app window opens automatically. No API key is required until you run an analysis.
 
----
 
 ## Supported Models
 
-| Provider | Label | Status | Notes |
-|----------|-------|--------|-------|
-| Anthropic | Claude | Integration tested | Default and recommended. Uses `claude-sonnet-4-6`. |
-| Google | Gemini | Integration untested | May work but has not been validated end-to-end. |
-| OpenAI | Codex | Integration untested | May work but has not been validated end-to-end. |
-| — | Mock LLM | Always works | Replays canned sample data. No API key required. Useful for testing the UI. |
+| Provider | Label | Integration Tested? | Notes |
+|----------|-------|---------------------|-------|
+| Anthropic | Claude | Yes | Default and recommended. Uses `claude-sonnet-4-6`. |
+| Google | Gemini | No | May work but has not been validated end-to-end. |
+| OpenAI | Codex | No | May work but has not been validated end-to-end. |
+| — | Mock LLM | Should always work | Replays canned sample data. No API key required. Useful for testing the UI. |
 
 To run without any API key, select **Mock LLM** from the Analyze menu.
 
@@ -57,7 +53,6 @@ export const DEFAULT_MODEL = 'claude-sonnet-4-6'
 
 The checks step always uses `claude-sonnet-4-6` regardless of session model setting.
 
----
 
 ## How to Use
 
@@ -67,7 +62,6 @@ The checks step always uses `claude-sonnet-4-6` regardless of session model sett
 4. **Review results** — the Overview tab shows extracted figures; the Findings tab shows check results grouped by category.
 5. **Ask questions** — type in the chat panel to ask anything about the return.
 
----
 
 ## Dry Run Mode
 
@@ -83,7 +77,6 @@ SAVE_SAMPLE=true npm run dev   # run a real analysis and save it as the sample
 DRY_RUN=true npm run dev       # replay the saved sample — no API calls made
 ```
 
----
 
 ## Tax Checks
 
@@ -105,7 +98,6 @@ The checks cover some federal and state rules.
 
 To add a new check, append it to the relevant section in `tax-checks.md`.
 
----
 
 ## File Processing
 
@@ -119,7 +111,6 @@ Before sending files to the model, the app pre-processes them to reduce token us
 | Image (PNG, JPG, etc.) | Passed as-is | Base64 image |
 | CSV / TXT | Passed as-is | Plain text |
 
----
 
 ## Data Storage
 
@@ -134,7 +125,6 @@ Sessions are saved to `<project>/sessions/`. Each session folder contains:
 
 A built-in John Doe session (`sessions/john-doe-2024/`) is included with sample IRS forms and is pre-loaded on first launch. It cannot be deleted but its analysis can be cleared and re-run.
 
----
 
 ## Building for Distribution
 
@@ -144,9 +134,8 @@ npm run build:win    # Windows — produces .exe installer
 npm run build:linux  # Linux — produces .AppImage
 ```
 
----
 
-## Tech Stack
+## Stack
 
 - [Electron](https://electronjs.org)
 - [electron-vite](https://electron-vite.org)
