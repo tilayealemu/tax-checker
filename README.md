@@ -17,6 +17,8 @@ Documents stay on your machine. Files are sent only to the AI provider's API (An
 - **Chat** — ask follow-up questions about the return; the model has full context of the uploaded documents.
 - **Sessions** — all sessions are saved locally. Each session stores uploaded files, extracted data, and check results for future reference.
 
+![Tax Checker screenshot](screenshot.png)
+
 
 ## Setup
 

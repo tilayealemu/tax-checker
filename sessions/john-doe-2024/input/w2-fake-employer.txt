@@ -8,7 +8,7 @@ b  Employer identification number (EIN): 12-3456789
 c  Employer's name, address, and ZIP code:
    FAKE EMPLOYER INC.
    456 CORPORATE BLVD
-   REDMOND, WA 98052
+   FAKECITY, WA 12345
 
 d  Control number: 2024-001
 

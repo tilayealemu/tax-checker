@@ -65,7 +65,6 @@ export default function HomeScreen({ onOpenSession }) {
               const n = (a.taxpayerName || '').localeCompare(b.taxpayerName || '')
               return n !== 0 ? n : (b.taxYear || 0) - (a.taxYear || 0)
             }).map(session => {
-              const isSelected = selected.find(s => s.id === session.id)
               const filingStatus = session.extractedData?.filingStatus
               const fileCount = session.files?.length || 0
               const toArray = r => Array.isArray(r) ? r : r ? Object.values(r) : []
