@@ -139,15 +139,6 @@ Sessions are saved to `<project>/sessions/`. Each session folder contains:
 A built-in John Doe session (`sessions/john-doe-2024/`) is included with sample IRS forms and is pre-loaded on first launch. It cannot be deleted but its analysis can be cleared and re-run.
 
 
-## Building for Distribution
-
-```bash
-npm run build:mac    # macOS — produces .dmg
-npm run build:win    # Windows — produces .exe installer
-npm run build:linux  # Linux — produces .AppImage
-```
-
-
 ## Stack
 
 - [Electron](https://electronjs.org)
