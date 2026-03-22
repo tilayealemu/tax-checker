@@ -97,7 +97,7 @@ export function copyFilesToSession(sessionId, filePaths) {
 export function saveClaudeLog(sessionId, logName, data) {
   const dir = getSessionDir(sessionId)
   if (!dir) return { success: false, error: 'Session not found' }
-  const logsDir = path.join(dir, 'claude-logs')
+  const logsDir = path.join(dir, 'llm-logs')
   ensureDir(logsDir)
   const logFile = path.join(logsDir, `${logName}-${Date.now()}.json`)
   fs.writeFileSync(logFile, JSON.stringify(data, null, 2), 'utf8')

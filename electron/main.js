@@ -1,14 +1,13 @@
 import { app, BrowserWindow, ipcMain, dialog, Menu } from 'electron'
 import path from 'path'
 import fs from 'fs'
-import os from 'os'
 import { fileURLToPath } from 'url'
 import * as sessions from './sessions.js'
 import { processFiles } from './fileProcessor.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const DRY_RUN = process.env.DRY_RUN === 'true'
-const SAMPLE_PATH = path.join(os.homedir(), 'TaxChecker', 'sample.json')
+const SAMPLE_PATH = path.join(app.getAppPath(), 'sample.json')
 
 let mainWindow
 
@@ -207,7 +206,16 @@ ipcMain.handle('llm:call', async (event, { provider: providerId = 'anthropic', a
     ? sessions.readSessionFiles(sessionId)
     : (files || [])
 
-  const { processedFiles, fileMetadata } = await processFiles(resolvedFilePaths)
+  let outputDir
+  if (useSessionFiles && sessionId) {
+    const sessionDir = sessions.getSessionDir(sessionId)
+    if (sessionDir) {
+      outputDir = path.join(sessionDir, 'output')
+      if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true })
+    }
+  }
+
+  const { processedFiles, fileMetadata } = await processFiles(resolvedFilePaths, outputDir)
 
   if (sessionId && Object.keys(fileMetadata).length > 0) {
     const existing = sessions.get(sessionId)

@@ -11,11 +11,27 @@ Documents stay on your machine. Files are sent only to the AI provider's API (An
 
 ## Features
 
-- **PDF to text** — converts PDF files to plain text locally using [pdf-parse](https://github.com/modesty/pdf-parse) before sending anything to a model, reducing token usage and keeping raw documents off the wire where possible.
-- **Extract** — parses uploaded tax documents and pulls out structured data: income, deductions, credits, refund/owed, effective rate, filing status, dependents, and attached schedules. ([prompt](prompts/extract.md))
-- **Check** — evaluates the return against a checklist of federal and state tax opportunities and flags anything that may have been missed or miscalculated. ([prompt](prompts/checks.md) · [checks](tax-checks.md))
-- **Chat** — ask follow-up questions about the return; the model has full context of the uploaded documents. ([prompt](prompts/analyze.md))
+- **PDF to text** — converts PDF files to plain text locally using [pdf-parse](https://github.com/modesty/pdf-parse) before sending anything to a model, reducing token usage and keeping raw documents off the wire where possible. If the pdf couldn't be converted to text, it will be passed as-is.
+- **Extract** — parses uploaded tax documents and pulls out structured data: income, deductions, credits, refund/owed, effective rate, filing status, dependents, and attached schedules. It tries to identify the IRS form type. It also takes any user provided file and tries to extract the most relevant figures. 
+- **Check** — evaluates the return against a checklist of federal and state tax opportunities and flags anything that may have been missed or miscalculated. It uses all the uploaded documents.
+- **Chat** — ask follow-up questions about the return. The model has context of the uploaded documents.
 - **Sessions** — all sessions are saved locally. Each session stores uploaded files, extracted data, and check results for future reference.
+
+Key prompts and files
+
+- [Analyze](prompts/analyze.md)
+- [Extract](prompts/extract.md)
+- [Checks](prompts/checks.md)
+- [Tax Checks](tax-checks.md)
+
+```mermaid
+flowchart LR
+    A([Select files]) --> B[Minimize\nPDF → text\nExcel → CSV]
+    B --> C[Extract\nstructured data]
+    C --> D[Analyze\nagainst checks]
+    D --> E([Review\nfindings])
+    E --> F([Chat\nfollow-up])
+```
 
 <img src="screenshot.png" width="50%" />
 
@@ -47,13 +63,7 @@ To run without any API key, select **Mock LLM** from the Analyze menu.
 
 ### Changing the Claude model
 
-The default Claude model used for extraction is `claude-sonnet-4-6`. To change it, edit the model field when creating a new session, or update the default in `src/config.js`:
-
-```js
-export const DEFAULT_MODEL = 'claude-sonnet-4-6'
-```
-
-The checks step always uses `claude-sonnet-4-6` regardless of session model setting.
+The default Claude model is `claude-sonnet-4-6`. To change it, select a different model when creating a new session. The checks step always uses `claude-sonnet-4-6` regardless of session model setting.
 
 
 ## How to Use
@@ -71,8 +81,8 @@ For UI development and testing without making live API calls:
 
 | Variable | Effect |
 |----------|--------|
-| `DRY_RUN=true` | Skips all API calls and replays data from `~/TaxChecker/sample.json`. |
-| `SAVE_SAMPLE=true` | Shows a **Save as sample** button in the session action bar. After running a full analysis, click it to save the session data to `~/TaxChecker/sample.json` for use with `DRY_RUN`. |
+| `DRY_RUN=true` | Skips all API calls and replays data from `sample.json` in the project root. |
+| `SAVE_SAMPLE=true` | Shows a **Save as sample** button in the session action bar. After running a full analysis, click it to save the session data to `sample.json` in the project root for use with `DRY_RUN`. |
 
 ```bash
 SAVE_SAMPLE=true npm run dev   # run a real analysis and save it as the sample
@@ -107,8 +117,8 @@ Before sending files to the model, the app pre-processes them to reduce token us
 
 | File type | Treatment | Sent to model as |
 |-----------|-----------|-----------------|
-| PDF (text-based) | Text extracted, saved as `*-auto-generated.txt` | Plain text |
-| PDF (scanned/image) | Detected automatically | Base64 document |
+| PDF (text-based) | Text extracted, saved as `*-auto-generated.txt` in `output/` | Plain text |
+| PDF (scanned/image) | Detected automatically, not extractable | Base64 document |
 | Excel (.xlsx, .xls) | Converted to CSV | Plain text |
 | Image (PNG, JPG, etc.) | Passed as-is | Base64 image |
 | CSV / TXT | Passed as-is | Plain text |
@@ -122,7 +132,8 @@ Sessions are saved to `<project>/sessions/`. Each session folder contains:
 {taxpayer}-{year}-{timestamp}/
   session.json          # metadata, extracted data, and check results
   input/                # copies of uploaded documents
-  claude-logs/          # full request/response logs for every API call
+  output/               # auto-generated txt files from PDFs and Excel
+  llm-logs/             # full request/response logs for every API call
 ```
 
 A built-in John Doe session (`sessions/john-doe-2024/`) is included with sample IRS forms and is pre-loaded on first launch. It cannot be deleted but its analysis can be cleared and re-run.
