@@ -1,0 +1,111 @@
+Form 1040 U.S. Individual Income Tax Return 2024
+Department of the Treasury — Internal Revenue Service
+
+Filing Status: Married Filing Jointly
+
+Your first name and middle initial: JOHN                    Last name: DOE
+Social security number: ***-**-1234
+Spouse's first name: JANE                                   Last name: DOE
+Spouse's social security number: ***-**-5678
+Home address: 123 FAKE AVENUE
+City, town, or post office: SEATTLE                 State: WA     ZIP: 12345
+
+Dependents:
+  JIMMY DOE   Son   2016   SSN: ***-**-9999   (3) Qualifying child for CTC
+  Total qualifying children: 1
+
+Presidential Election Campaign Fund: No
+
+INCOME
+1a  Total wages, salaries, tips, etc. Attach Form(s) W-2 ........ 1a   205,700
+1b  Household employee wages ........................................ 1b
+1c  Tip income ........................................................ 1c
+1d  Medicaid waiver payments ......................................... 1d
+1e  Taxable dependent care benefits .................................. 1e
+1f  Employer adoption benefits ....................................... 1f
+1g  Wages from Form 8919 ............................................. 1g
+1h  Other earned income .............................................. 1h
+1z  Add lines 1a through 1h .......................................... 1z   205,700
+2b  Taxable interest ................................................. 2b     1,500
+3a  Qualified dividends .............................................. 3a     5,900
+3b  Ordinary dividends ............................................... 3b     7,800
+4b  IRA distributions (taxable) ...................................... 4b
+5b  Pensions and annuities (taxable) ................................. 5b
+6b  Social security benefits (taxable) ............................... 6b
+7   Capital gain or (loss). Attach Schedule D ........................  7    29,311
+8   Additional income from Schedule 1, line 10 .......................  8     5,000
+9   Total income. Add lines 1z, 2b, 3b, 4b, 5b, 6b, 7, and 8 ....... 9   249,311
+
+ADJUSTMENTS TO INCOME
+10  Adjustments to income from Schedule 1, line 26 .................. 10
+11  Adjusted gross income. Subtract line 10 from line 9 ............. 11  249,311
+
+STANDARD DEDUCTION
+Standard deduction:
+  Married filing jointly: $29,200
+12a Standard deduction or itemized deductions (from Schedule A) .... 12a   29,200
+12b Charitable contributions if you take the standard deduction .... 12b
+12c Add lines 12a and 12b ........................................... 12c   29,200
+13  Qualified business income deduction (Form 8995) ................. 13
+14  Add lines 12c and 13 ............................................ 14    29,200
+15  Taxable income. Subtract line 14 from line 11 ................... 15   220,111
+
+TAX AND CREDITS
+16  Tax (see instructions) .......................................... 16    40,823
+17  Alternative minimum tax (Form 6251) ............................. 17
+18  Add lines 16 and 17 ............................................. 18    40,823
+19  Child tax credit or credit for other dependents ................. 19     2,000
+20  Schedule 3, line 8 .............................................. 20
+21  Add lines 19 and 20 ............................................. 21     2,000
+22  Subtract line 21 from line 18 ................................... 22    38,823
+23  Other taxes, including self-employment tax ...................... 23
+24  Total tax. Add lines 22 and 23 ................................. 24    38,823
+
+PAYMENTS
+25a Federal income tax withheld (W-2 and 1099) ..................... 25a   41,658
+25b 2024 estimated tax payments .................................... 25b
+26  Earned income credit (EIC) ..................................... 26
+27  Additional child tax credit (Schedule 8812) ..................... 27
+28  American opportunity credit (Form 8863, line 29) ............... 28
+29  Reserved for future use ......................................... 29
+30  Recovery rebate credit .......................................... 30
+31  Amount from Schedule 3, line 15 ................................ 31
+32  Add lines 27 through 31 ......................................... 32
+33  Total other payments and refundable credits ..................... 33
+34  Total payments. Add lines 25a through 25c, 26, and 32-33 ....... 34    41,658
+
+REFUND
+35a If line 34 is more than line 24, overpayment .................. 35a    2,835
+35b Amount of line 35a you want refunded to you ................... 35b    2,835
+37  Amount you owe ................................................. 37         0
+
+Effective tax rate: 15.6%
+Marginal tax rate: 22%
+
+Schedules attached: Schedule B, Schedule D, Schedule E, Form 8949
+
+SCHEDULE A — ITEMIZED DEDUCTIONS (computed; standard deduction claimed instead)
+5a  State and local income taxes ...................................  5a         0
+5b  State and local general sales taxes ............................  5b     1,800
+5c  State and local real estate taxes ..............................  5c     8,200
+5d  State and local personal property taxes ........................  5d
+5e  Add lines 5a through 5d. Total state and local taxes ...........  5e    10,000
+8a  Home mortgage interest (Form 1098) .............................  8a    18,400
+11  Gifts to charity ...............................................  11     4,500
+17  Total itemized deductions ......................................  17    32,900
+Note: Standard deduction ($29,200) was claimed. Itemized deductions total $32,900
+      — $3,700 more than standard deduction.
+
+RETIREMENT CONTRIBUTIONS (from W-2 and records)
+  401(k) elective deferral (Box 12 Code D): 23,000
+  Roth IRA contribution: 3,500
+  HSA contribution: 3,850
+
+Sign Here:
+Under penalties of perjury, I declare that I have examined this return and accompanying schedules
+and statements, and to the best of my knowledge and belief, they are true, correct, and complete.
+
+Your signature: JOHN DOE          Date: 04/15/2025
+Spouse's signature: JANE DOE      Date: 04/15/2025
+Your occupation: Software Engineer
+Spouse's occupation: Marketing Manager

@@ -1,0 +1,51 @@
+RENTAL INCOME & EXPENSE TRACKER — 789 RENTAL LANE, SEATTLE WA 98101
+Tax Year 2024
+Prepared by: John Doe
+
+=== MONTHLY RENTAL INCOME ===
+Month        Rent Received   Notes
+-----------  -------------   -----
+January      416.67
+February     416.67
+March        416.67
+April        416.67
+May          416.67
+June         416.67
+July         416.67
+August       416.67
+September    416.67
+October      416.67
+November     416.67
+December     416.62
+             -------------
+TOTAL        5,000.00
+
+=== EXPENSES ===
+Date         Category              Amount    Notes
+-----------  --------------------  -------   ------
+Jan 15       Insurance (annual)    800.00    Homeowners / landlord policy
+Feb 03       Supplies               50.00    Cleaning supplies
+Mar 12       Bathroom Remodel    1,800.00    Contractor — full bath renovation
+Apr 07       Repairs                75.00    Faucet replacement
+May 20       Supplies               75.00    Paint and misc
+Jun 01       HOA / Taxes           400.00    Property tax installment 1
+Jul 18       Cleaning              125.00    Professional clean between tenants
+Sep 01       HOA / Taxes           400.00    Property tax installment 2
+Nov 05       Repairs               200.00    Window seal replacement
+Dec 10       Utilities              75.00    Final utility true-up (landlord paid)
+             --------------------  -------
+TOTAL EXPENSES                   4,200.00
+
+Mortgage interest paid to bank (Form 1098):  $2,400.00  (not included in expense total above — reported separately on Schedule E line 12)
+
+=== SUMMARY ===
+Gross rental income:     5,000.00
+Total operating expenses: 4,200.00
+Net income (loss):          800.00
+
+=== NOTES ===
+- Depreciation: Property purchased 2018, purchase price $230,000, land value ~$50,000.
+  Depreciable basis ~$180,000. No depreciation claimed this year (consult CPA).
+- The $1,800 bathroom remodel may need to be capitalized under §263(a) rather than
+  expensed as a repair. Review with tax professional.
+- All amounts verified against bank statements and receipts on file.

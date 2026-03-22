@@ -1,0 +1,13 @@
+# Ignore all session folders except john-doe-2024
+*
+!.gitignore
+!john-doe-2024/
+!john-doe-2024/**
+
+# Within john-doe-2024, ignore analysis outputs
+john-doe-2024/output/
+john-doe-2024/session.json
+
+# macOS
+.DS_Store
+**/.DS_Store

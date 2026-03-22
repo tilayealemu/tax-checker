@@ -1,0 +1,32 @@
+appId: com.taxchecker.app
+productName: Tax Checker
+directories:
+  output: dist
+  buildResources: build
+files:
+  - out/**
+  - "!**/.vscode/*"
+  - "!src/*"
+  - "!electron/*"
+  - "!*.{md,yaml}"
+extraResources:
+  - from: prompts/
+    to: prompts/
+    filter: "*.md"
+  - from: tax-checks.md
+    to: tax-checks.md
+mac:
+  target:
+    - dmg
+  arch:
+    - x64
+    - arm64
+win:
+  target:
+    - nsis
+linux:
+  target:
+    - AppImage
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true

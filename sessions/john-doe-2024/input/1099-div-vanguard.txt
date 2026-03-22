@@ -1,0 +1,45 @@
+2024 Form 1099-DIV
+Dividends and Distributions
+
+PAYER'S name, address, and ZIP code:
+VANGUARD FAKE FUNDS LLC
+100 FAKE FUND BLVD
+FAKEVILLE, FA 00001
+
+PAYER'S TIN: 00-0000001
+
+RECIPIENT'S TIN: ***-**-1234
+
+RECIPIENT'S name: JOHN DOE
+Street address: 123 FAKE AVENUE
+City, state, ZIP: SEATTLE, WA 12345
+
+Account number: XXXX-XXXX-4321
+
+Box 1a  Total ordinary dividends:                    8,500.00
+Box 1b  Qualified dividends:                         6,200.00
+Box 2a  Total capital gain distributions:
+Box 2b  Unrecaptured Section 1250 gain:
+Box 2c  Section 1202 gain:
+Box 2d  Collectibles (28%) gain:
+Box 2e  Section 897 ordinary dividends:
+Box 2f  Section 897 capital gain:
+Box 3   Nondividend distributions:
+Box 4   Federal income tax withheld:                     0.00
+Box 5   Section 199A dividends:
+Box 6   Investment expenses:
+Box 7   Foreign tax paid:                                0.00
+Box 8   Foreign country or U.S. possession:
+Box 9   Cash liquidation distributions:
+Box 10  Noncash liquidation distributions:
+Box 11  Exempt-interest dividends:                   2,200.00
+Box 12  Specified private activity bond interest dividends:
+Box 13  State: WA     State identification no.:
+Box 14  State tax withheld:                              0.00
+
+This is important tax information and is being furnished to the IRS.
+If you are required to file a return, a negligence penalty or other sanction
+may be imposed on you if this income is taxable and the IRS determines
+that it has not been reported.
+
+FATCA filing requirement: [ ]

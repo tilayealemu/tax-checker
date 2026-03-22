@@ -1,0 +1,44 @@
+W-2 Wage and Tax Statement 2024
+Department of the Treasury — Internal Revenue Service
+
+a  Employee's social security number: ***-**-1234
+
+b  Employer identification number (EIN): 12-3456789
+
+c  Employer's name, address, and ZIP code:
+   FAKE EMPLOYER INC.
+   456 CORPORATE BLVD
+   REDMOND, WA 98052
+
+d  Control number: 2024-001
+
+e  Employee's first name and initial: JOHN              Last name: DOE
+f  Employee's address and ZIP code: 123 FAKE AVENUE, SEATTLE, WA 12345
+
+1   Wages, tips, other compensation:        205,700.00
+2   Federal income tax withheld:             41,658.00
+3   Social security wages:                  160,200.00
+4   Social security tax withheld:             9,932.40
+5   Medicare wages and tips:               205,700.00
+6   Medicare tax withheld:                   2,982.65
+7   Social security tips:
+8   Allocated tips:
+9   (blank)
+10  Dependent care benefits:
+11  Nonqualified plans:
+12a Code D  401(k) contributions:            23,000.00
+12b
+12c
+12d
+13  Statutory employee: [ ]   Retirement plan: [X]   Third-party sick pay: [ ]
+14  Other:
+    HSA employer contribution:               1,500.00
+
+15  State: WA    Employer's state ID number: WA-987654
+16  State wages, tips, etc.:              205,700.00
+17  State income tax:                           0.00
+18  Local wages, tips, etc.:
+19  Local income tax:
+20  Locality name:
+
+Note: Washington state has no state income tax. No state withholding applies.

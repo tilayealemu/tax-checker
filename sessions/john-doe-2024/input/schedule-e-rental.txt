@@ -1,0 +1,55 @@
+Schedule E (Form 1040) 2024
+Supplemental Income and Loss
+(From rental real estate, royalties, partnerships, S corporations, estates, trusts, REMICs, etc.)
+
+Department of the Treasury  Internal Revenue Service
+Attach to Form 1040, 1040-SR, 1040-NR, or 1041.
+
+Name(s) shown on return: JOHN DOE & JANE DOE
+Your social security number: ***-**-1234
+
+PART I — Income or Loss From Rental Real Estate and Royalties
+
+Property A:
+Physical address of each property: 789 RENTAL LANE, SEATTLE, WA 98101
+Type of property: 1 (Single Family Residence)
+Fair rental days: 365       Personal use days: 0
+QJV: [ ]
+
+INCOME
+3   Rents received .................................................. 3    5,000
+
+EXPENSES
+5   Advertising ..................................................... 5
+6   Auto and travel ................................................. 6
+7   Cleaning and maintenance ........................................ 7      200
+8   Commissions ..................................................... 8
+9   Insurance ....................................................... 9      800
+10  Legal and other professional fees ............................... 10
+11  Management fees ................................................. 11
+12  Mortgage interest paid to banks ................................ 12   2,400
+13  Other interest .................................................. 13
+14  Repairs ......................................................... 14   1,800
+    (includes $1,800 bathroom remodel — see landlord spreadsheet)
+15  Supplies ........................................................ 15     200
+16  Taxes ........................................................... 16     800
+17  Utilities ....................................................... 17
+18  Depreciation expense or depletion .............................. 18       0
+    (Note: No depreciation claimed — property depreciable basis ~$180,000,
+     estimated annual MACRS deduction ~$6,545 over 27.5 years not taken)
+19  Other (list):  .................................................. 19
+20  Total expenses .................................................. 20   4,200
+
+21  Subtract line 20 from line 3 ................................... 21     800
+22  Deductible rental loss after limitation ......................... 22     800
+23a Total of all amounts reported on line 3 (rents) ................. 23a  5,000
+23b Total of all amounts reported on line 4 (royalties) ............. 23b
+23c Total of all amounts reported on line 12 (mortgage interest) .... 23c  2,400
+23d Total of all amounts reported on line 18 (depreciation) ......... 23d      0
+23e Total of all amounts reported on line 20 (expenses) ............. 23e  4,200
+24  Income. Add positive amounts shown on line 21 ................... 24     800
+25  Losses. Add royalty losses and rental losses .................... 25
+26  Total rental real estate and royalty income or (loss) ........... 26     800
+
+SUMMARY
+Net income from rental real estate (carry to Form 1040, Schedule 1, line 5):  $800

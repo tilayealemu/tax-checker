@@ -1,0 +1,33 @@
+{
+  "name": "tax-checker",
+  "version": "1.0.0",
+  "description": "Tax return analysis desktop app powered by Claude AI",
+  "main": "out/main/main.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build && electron-builder --config config/electron-builder.yml",
+    "build:mac": "electron-vite build && electron-builder --mac --config config/electron-builder.yml",
+    "build:win": "electron-vite build && electron-builder --win --config config/electron-builder.yml",
+    "build:linux": "electron-vite build && electron-builder --linux --config config/electron-builder.yml",
+    "preview": "electron-vite preview"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.36.0",
+    "@google/generative-ai": "^0.24.1",
+    "openai": "^6.32.0",
+    "pdf-parse": "^2.4.5",
+    "uuid": "^11.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.0",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0",
+    "electron-vite": "^2.0.0",
+    "postcss": "^8.4.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^3.4.0"
+  }
+}

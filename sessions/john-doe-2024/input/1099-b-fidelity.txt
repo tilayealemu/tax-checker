@@ -1,0 +1,69 @@
+2024 Form 1099-B
+Proceeds From Broker and Barter Exchange Transactions
+
+PAYER'S name, address, and ZIP code:
+FAKE BROKERAGE SERVICES LLC
+999 FAKE STREET
+FAKEVILLE, FA 00001
+
+PAYER'S TIN: 00-0000002
+
+RECIPIENT'S TIN: ***-**-1234
+
+RECIPIENT'S name: JOHN DOE
+Street address: 123 FAKE AVENUE
+City, state, ZIP: SEATTLE, WA 12345
+
+Account number: XXXX-XXXX-7777
+
+-- SHORT-TERM TRANSACTIONS (Covered Securities — Box A) --
+
+1a  Description of property:  ACME CORP (ACME) — 200 shares
+1b  Date acquired:             03/15/2023
+1c  Date sold or disposed:     02/10/2024
+1d  Proceeds:                   8,200.00
+1e  Cost or other basis:       11,100.00
+1f  Accrued market discount:
+1g  Wash sale loss disallowed:    680.00
+    Gain or (loss):            (2,900.00 + 680.00 wash) = (2,220.00) net
+
+1a  Description of property:  BETA INC (BETA) — 150 shares
+1b  Date acquired:             07/22/2023
+1c  Date sold or disposed:     09/05/2024
+1d  Proceeds:                   5,100.00
+1e  Cost or other basis:       6,690.00
+1g  Wash sale loss disallowed:    600.00
+    Gain or (loss):            (1,590.00 + 600.00 wash) = (990.00) net
+
+Net short-term capital gain or (loss):                        (4,210.00)
+
+-- LONG-TERM TRANSACTIONS (Covered Securities — Box D) --
+
+1a  Description of property:  GAMMA FUND (GFND) — 500 shares
+1b  Date acquired:             01/10/2020
+1c  Date sold or disposed:     06/18/2024
+1d  Proceeds:                  28,400.00
+1e  Cost or other basis:        9,750.00
+    Gain or (loss):            18,650.00
+
+1a  Description of property:  DELTA ETF (DETF) — 300 shares
+1b  Date acquired:             03/03/2019
+1c  Date sold or disposed:     11/22/2024
+1d  Proceeds:                  22,100.00
+1e  Cost or other basis:        7,229.00
+    Gain or (loss):            14,871.00
+
+Net long-term capital gain or (loss):                         33,521.00
+
+SUMMARY
+  Net short-term capital gain or (loss):                      (4,210.00)
+  Net long-term capital gain or (loss):                       33,521.00
+  Combined net capital gain or (loss):                        29,311.00
+
+Box 4   Federal income tax withheld:                              0.00
+Box 6   Reported to IRS: Gross proceeds
+Applicable check box on Form 8949: (A) Short-term covered; (D) Long-term covered
+
+Note: Total wash sale disallowed losses: $1,280.00
+These amounts have been added to cost basis of replacement shares.
+If replacement shares were sold in 2024, verify that cost basis was correctly adjusted.
